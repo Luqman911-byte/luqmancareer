@@ -195,16 +195,33 @@ form textarea {
     text-decoration: underline;
   }
   
-  @media (max-width: 600px) {
-    .footer-content {
-      flex-direction: column;
-      text-align: center;
-      gap: 15px;
-    }
-    .footer-social {
-      align-items: center;
-    }
-  }
+  @media (max-width: 1024px) {
+  .header { flex-direction: column; align-items: flex-start; }
+  .nav-header { margin-top: 10px; }
+  .intro { flex-direction: column; text-align: center; }
+  .foto-bulat { margin: 0 auto 20px; }
+  .skills-container, .video-container { justify-content: center; }
+  .video-container video { width: 100%; height: auto; }
+}
+@media (max-width: 768px) {
+  .profile-header h1 { font-size: 20px; }
+  .profile-header p, .skill-circle { font-size: 12px; }
+  .skills-section h2, .intro-text h1 { font-size: 20px; }
+  .skill-circle { width: 80px; height: 80px; }
+  .form-container, .cv-container { padding: 15px; }
+  button { padding: 8px; }
+  .gallery-img { grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); }
+}
+@media (max-width: 480px) {
+  .header { padding: 15px 20px; }
+  .nav-header a { margin-left: 10px; font-size: 14px; }
+  .foto-bulat, .profile-image img { width: 120px; height: 120px; }
+  .intro-text h1 { font-size: 1.5em; }
+  .skills-container { gap: 10px; }
+  .form-container, .cv-container { padding: 10px; }
+  .video-container { flex-direction: column; align-items: center; }
+  .video-container video { max-width: 100%; }
+}
   
   
   /* Minimalist Skill Table Style */
