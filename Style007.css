@@ -219,12 +219,9 @@ form textarea {
   .intro-text h1 { font-size: 1.5em; }
   .skills-container { gap: 10px; }
   .form-container, .cv-container { padding: 10px; }
-  .video-container { flex-direction: column; align-items: center; }
-  .video-container video { max-width: 100%; }
-}
+  .video-container {flex-direction: column;align-items: center; width: 100%;}
+  .video-container video {width: 100%;height: auto;max-width: 100%;aspect-ratio: 16 / 9;}
   
-  
-  /* Minimalist Skill Table Style */
   .skill-table-container {
     max-width: 800px;
     margin: 40px auto;
